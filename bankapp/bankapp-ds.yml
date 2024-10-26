@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: adijaiswal/bankapp:v4
+        image: waldara/bankapp:latest
         ports:
         - containerPort: 8080
         env:
@@ -35,7 +35,7 @@ kind: Service
 metadata:
   name: bankapp-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     targetPort: 8080
