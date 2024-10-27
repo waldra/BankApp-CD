@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: waldara/bankapp:1.2
+        image: waldara/bankapp:1.4
         ports:
         - containerPort: 8080
         env:
